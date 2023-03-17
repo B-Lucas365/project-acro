@@ -10,10 +10,6 @@
   <a href="#-projeto">Projeto</a>
 </p>
 
-<p align="center">
-  <img alt="projeto Habits" src=".github/preview.png" width="100%">
-</p>
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
