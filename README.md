@@ -25,7 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Swiper-js
 
 ## 💻 Projeto
-Landing page para divugação de um studio de fotografia.
 
 - [Acesse o projeto finalizado, online](http://project-acro.epizy.com/index.php)
 
