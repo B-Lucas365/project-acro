@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('./global.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+
+/*=============home=========================*/
+#home{
+    overflow: hidden;
+}
+
+#home .container{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#home .image img{
+    width: 25rem;
+}
+
+#home .text{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#home .text h1{
+    margin-bottom: 1rem;
+}
+
+#home .text p{
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+/*==========about=====================*/
+#about{
+    background: var(--primary-color);
+    border: 1px solid black;
+    padding: 2rem 1rem;
+}
+
+#about .container{
+    margin: 0;
+    align-items: center;
+}
+
+
+#about .text{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#about .text .title{
+    color: var(--base-color);
+}
+
+#about .text p{
+    color: #d3d3d3;
+}
+
+
+/*===============================valores====================*/
+.cards.grid{
+    gap: 1.5rem;
+}
+
+.card{
+    padding: 2.5rem 1rem;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
+    border-bottom:  0.25rem solid var(--base-color);
+    border-radius: .25rem .25rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
+    gap: 2rem 0;
+
+}
+.card div{
+    text-align: center;
+}
+
+.card .tiles{
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card .title{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--base-color);
+}
+
+.card p{
+    color: #d3d3d3;
+}
+
+
+.card img{
+    width: 6rem;
+}
+
+/*===============================produtos====================*/
+
+#products{
+    background: white;
+}
+
+#products .container{
+    margin: auto;
+}
+
+#products header{
+    margin: 0 auto 0;
+}
+
+#products blockquote{
+    padding: .5rem;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.08); 
+    border-radius: .25rem;
+
+}
+
+
+#products blockquote p{
+    position: relative;
+    text-indent: 1.875rem;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+}
+
+
+/*swiper*/
+
+.swiper-slide{
+    height: auto;
+}
+
+.swiper-wrapper{
+    padding: 5rem 0;
+}
+
+.swiper-pagination-bullet{
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+.swiper-pagination-bullet-active{
+    background: var(--primary-color);
+
+}
+
+
+
+/*===============================contact====================*/
+
+#contact .grid{
+    gap: 4rem; 
+}
+
+#contact .text p{
+    margin-bottom: 2rem;
+}
+
+#contact .links .title{
+    font-size: 1rem;
+}
+
+
+
+
+#contact ul.grid{
+    gap: 2rem;
+}
+
+
+#contact ul li {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/*============back-to-top==================*/
+.back-to-top{
+    background: var(--primary-color);
+    color: #FFF;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: .8rem;
+    clip-path: circle();
+    line-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(100%);
+    
+
+}
+
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    
+
+}
+
+/* responsivo / midia queries*/
+
+@media (min-width: 1200px){
+    
+    #home .container{
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    #home .image{
+        order: 1;
+    }
+
+    #home .text{
+        order: 0;
+        max-width: 24rem;
+        text-align: left;
+    }
+
+
+
+    #about .container{
+        margin: 0 auto;
+        grid-auto-flow: column;
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #contact .container{
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text{
+        max-width: 25rem;
+
+    }
+
+    .swiper-slide{
+        height: auto;
+    }
+
+
+    main{
+        margin-top: var(--header-height);
+    }
+}
